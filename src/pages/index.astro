@@ -1,20 +1,21 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Navigation from "../components/Navigation.astro"
+import MyReactComponent from '../components/MyReactComponent.jsx';
 ---
 
 <Layout title="Welcome to the Home Page.">
 
 <h1>Welcome to the Home Page</h1>
+<h2>Use React Components directly in Astro!</h2>
+<MyReactComponent />
 
 <Navigation nav1='Home' nav2='About' nav3='Blog'/>
 
 </Layout>
 
 <style>
-  h1 {
-    color: #333;
-    text-align: center;
+  h1,h2 {
     margin-top: 50px;
   }
 </style>
