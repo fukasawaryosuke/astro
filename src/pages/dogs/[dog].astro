@@ -1,0 +1,36 @@
+---
+export function getStaticPaths() {
+  return  [
+    {params: {dog: 'golden-retriever'}},
+    {params: {dog: 'dachshund'}},
+    {params: {dog: 'shiba-inu'}},
+  ];
+}
+
+const  { dog }  = Astro.params;
+---
+
+<h1>{dog}</h1>
+
+<a href="/">Go back to Home Page</a>
+
+<style>
+  h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  a {
+    display: block;
+    width:200px;
+		margin: 20px auto 0;
+    text-align: center;
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
