@@ -1,0 +1,28 @@
+---
+const {nav1, nav2 , nav3}= Astro.props
+---
+
+<nav>
+  <a href="/">{nav1}</a>
+  <a href="/about/">{nav2}</a>
+  <a href="/blog/">{nav3}</a>
+</nav>
+
+<style>
+nav {
+  display: flex;
+  align-items: center;
+  width:200px;
+  margin: 0 auto;
+}
+a {
+  display: block;
+	margin: 0 auto;
+  text-align: center;
+  color: #007bff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+</style>

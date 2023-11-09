@@ -1,13 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Navigation from "../components/Navigation.astro"
 ---
 
 <Layout title="Welcome to the Home Page.">
 
 <h1>Welcome to the Home Page</h1>
 
-<a href="/about">Go to About Page</a>
+<Navigation nav1='Home' nav2='About' nav3='Blog'/>
 
 </Layout>
 
@@ -16,18 +16,5 @@ import Card from '../components/Card.astro';
     color: #333;
     text-align: center;
     margin-top: 50px;
-  }
-
-  a {
-    display: block;
-		width:200px;
-		margin: 20px auto 0;
-    text-align: center;
-    color: #007bff;
-    text-decoration: none;
-  }
-
-  a:hover {
-    text-decoration: underline;
   }
 </style>
