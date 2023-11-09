@@ -18,12 +18,4 @@ export default {
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-.my-vue-component h3 {
-  color: #333;
-}
-
-.my-vue-component p {
-  color: #666;
-}
 </style>

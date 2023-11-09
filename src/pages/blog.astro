@@ -1,11 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Navigation from "../components/Navigation.astro"
+import MySvelteComponent from  '../components/MySvelteComponent.svelte';
 ---
 
 <Layout title="Welcome to the Home Page.">
 
 <h1>Blog Us</h1>
+
+<h2>Use Svelte Components directly in Astro!</h2>
+<MySvelteComponent />
 
 <Navigation nav1='Home' nav2='About' nav3='Blog'/>
 
